@@ -4,6 +4,9 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
+      - name: Code Checkou
       - uses: actions/checkout@v4
       - run: echo Hello World
-      - run: ls -Al
+        name: Run echo command
+      - run: find
+        name: List files
