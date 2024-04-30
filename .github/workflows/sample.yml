@@ -4,8 +4,8 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-      - name: Code Checkou
-      - uses: actions/checkout@v4
+      - name: Code Checkout
+        uses: actions/checkout@v4
       - run: echo Hello World
         name: Run echo command
       - run: find .
